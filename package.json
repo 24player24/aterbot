@@ -1,15 +1,19 @@
 {
 	"private": true,
 	"type": "module",
-	
 	"name": "aterbot",
-	"version": "0.0.0",
-	
+	"version": "1.0.0",
+	"description": "A Minecraft bot for keeping your Aternos server alive 24/7",
+	"author": "KlartNET",
+	"license": "GPL-3.0",
+	"engines": {
+		"node": ">=18.0.0"
+	},
 	"scripts": {
 		"start": "tsx ./src/index.ts",
-		"dev": "node --inspect --loader tsx ./src/index.ts"
+		"dev": "node --inspect --loader tsx ./src/index.ts",
+		"type-check": "tsc --noEmit"
 	},
-
 	"dependencies": {
 		"mineflayer": "^4.20.0",
 		"tsx": "^4.7.1"
